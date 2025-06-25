@@ -6,7 +6,7 @@ This project examines gender bias in music recommender systems using Spotify Mil
 
 ## 📁 Structure
 - `data/`: contains the datasets used or links to download them
-- `notebooks/`: contains data processing, modeling, and fairness evaluation notebooks
+- `notebooks/`: contains data processing, descriptive statistics, modeling, and fairness evaluation notebooks
 - `requirements.txt`: packages needed to run the notebooks
 - `README.md`: this file
 
