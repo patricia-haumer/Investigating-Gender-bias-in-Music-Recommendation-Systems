@@ -19,8 +19,8 @@ Some data files (due to size or licensing) may be partially included or require 
 
 ## 🧠 Tools & Libraries
 - Python (pandas, numpy, scikit-learn)
-- Fairlearn
-- AIF360
+- [Fairlearn](https://github.com/fairlearn/fairlearn) 
+- [AIF360](https://github.com/Trusted-AI/AIF360)
 - Jupyter Notebooks
 
 ## 👩‍💻 Contributors
