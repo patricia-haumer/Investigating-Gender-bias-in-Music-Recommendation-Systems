@@ -7,7 +7,7 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
 ## 📦 Spotify Datasets
 
 - **`interactions.csv`**  
-  Contains user-track interaction data extracted from the [Spotify Million Playlist Dataset](https://doi.org/10.1145/3269206.3269288).  
+  Contains user-track interaction data extracted from the [Spotify Million Playlist Dataset]([https://doi.org/10.1145/3269206.3269288](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge).  
   Format: playlist-track pairs used for building the recommender system.
 
 - **`playlist_id_map.csv`**  
@@ -43,7 +43,7 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
 ## 🔗 Data Sources
 
 - **Spotify Million Playlist Dataset**  
-  [https://doi.org/10.1145/3269206.3269288](https://doi.org/10.1145/3269206.3269288)
+  [https://doi.org/10.1145/3269206.3269288](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)
 
 - **Last.fm**  
   [https://www.kaggle.com/datasets/harshal19t/lastfm-dataset](https://www.kaggle.com/datasets/harshal19t/lastfm-dataset)
