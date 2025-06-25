@@ -12,7 +12,8 @@ This project examines gender bias in music recommender systems using Spotify and
 
 ## 📊 Datasets
 - **Spotify**: [Million Playlist Dataset](https://doi.org/10.1145/3269206.3269288)
-- **Last.fm**: Collected via publicly available sources and enriched using the [MusicBrainz API](https://musicbrainz.org/)
+- **Last.fm**: Collected via publicly available sources from [Kaggle](https://www.kaggle.com/datasets/harshal19t/lastfm-dataset)
+- The datasets were enriched using the [MusicBrainz API](https://musicbrainz.org/), by retrieving the gender attributes
 
 Some data files (due to size or licensing) may be partially included or require external download.
 
