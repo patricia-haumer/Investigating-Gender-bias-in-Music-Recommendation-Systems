@@ -13,6 +13,12 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
 - **`playlist_id_map.csv`**  
   Maps playlist IDs to additional metadata, potentially including playlist names, creation date, or user IDs.
 
+- **`spotify_tracks_with_gender.csv`** *(not included in repo)*  
+  A large enriched dataset containing Spotify track metadata along with inferred or collected artist gender labels.  
+  Used for fairness evaluation and gender-based analysis of recommendation exposure.  
+  **Note**: Due to its large size, this file is not hosted in the GitHub repository.  
+  👉 You can download it from: [Link](https://drive.google.com/file/d/1OZaKaUnG8-s9NwfGRnnc0ApUB14Rewah/view?usp=drive_link)
+  
 ---
 
 ## 🎵 Last.fm Datasets
@@ -21,8 +27,10 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
   Raw user listening data from Last.fm. Includes artist-track-user interactions used for recommender modeling and fairness evaluation.
 
 - **`artists.csv`**  
-  Contains metadata about artists, such as names and IDs used for joining with gender information.
-
+  Contains metadata about artists, such as names and IDs used for joining with gender information.lij
+  **Note**: Due to its large size, this file is not hosted in the GitHub repository.  
+  👉 You can download it from: [Link](https://drive.google.com/file/d/1z8mnEmztfy_FqOv1R71fC5KXesjNmU_u/view?usp=drive_link)
+  
 - **`lastfm_enriched_with_gender.csv`**  
   The Last.fm dataset enriched with gender metadata using the MusicBrainz API and custom mappings.  
   Used for evaluating demographic representation and fairness metrics.
