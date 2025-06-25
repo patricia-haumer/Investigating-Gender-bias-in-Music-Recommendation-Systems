@@ -4,20 +4,19 @@
 ## 📌 Project Overview
 This project investigates the presence and mitigation of **gender bias** in music recommender systems. We explore two real-world datasets (Spotify Million Playlist Dataset and Last.fm), assess fairness in popularity-based recommendation outputs, and apply algorithmic debiasing using **AIF360** and **Fairlearn**.
 
-### 🎯 Research Questions
-- Does gender bias exist in music recommender systems?
-
-**Sub-Research Questions:**
-- How do different fairness metrics e.g. demographic parity, equal opportunity reflect imbalances?​
-- How do different fairness-aware tools perform in mitigating gender bias in music recommendation systems
-
-
 ### 🎯 Project Goals
 - Analyze the **gender distribution** in Spotify and Last.fm music data.
 - Build **baseline recommenders** based on item popularity.
 - Quantitatively evaluate fairness using **statistical metrics** (e.g., disparate impact).
 - Apply **bias mitigation strategies** (e.g., Reweighing, Fairlearn reductions).
 - Promote **fairer exposure** for underrepresented gender groups in algorithmic music curation.
+
+### ❓ Research Questions
+- Does gender bias exist in music recommender systems?
+
+**Sub-Research Questions:**
+- How do different fairness metrics e.g. demographic parity, equal opportunity reflect imbalances?​
+- How do different fairness-aware tools perform in mitigating gender bias in music recommendation systems
 
 ## 📁 Structure
 - `data/`: contains the datasets used or links to download them
