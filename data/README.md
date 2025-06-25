@@ -13,7 +13,7 @@ This folder contains the datafiles used in the project **Unheard Voices: Investi
 - **`playlist_id_map.csv`**  
   Maps playlist IDs to additional metadata, potentially including playlist names, creation date, or user IDs.
 
-- **`spotify_tracks_with_gender.csv`** *(not included in repo, see Link)*  
+- **`spotify_tracks_with_gender.csv`** *(not included in repo, see Link)*
   A large enriched dataset containing Spotify track metadata along with inferred or collected artist gender labels.  
   Used for fairness evaluation and gender-based analysis of recommendation exposure.  
   **Note**: Due to its large size, this file is not hosted in the GitHub repository.  
