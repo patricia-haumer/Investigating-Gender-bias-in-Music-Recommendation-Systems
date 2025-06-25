@@ -4,7 +4,7 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
 
 ---
 
-## 📦 Spotify Datasets
+## 📦 Spotify Data
 
 - **`interactions.csv`**  
   Contains user-track interaction data extracted from the [Spotify Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge) 
@@ -21,7 +21,7 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
   
 ---
 
-## 🎵 Last.fm Datasets
+## 🎵 Last.fm Data
 
 - **`Last.fm_data.csv`**  
   Raw user listening data from Last.fm. Includes artist-track-user interactions used for recommender modeling and fairness evaluation.
