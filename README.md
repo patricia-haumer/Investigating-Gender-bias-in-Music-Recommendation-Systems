@@ -10,10 +10,8 @@ This project investigates the presence and mitigation of **gender bias** in musi
 - Does gender bias exist in music recommender systems?
 
 **Sub-Research Questions:**
-- How is artist gender distributed among the most frequently recommended tracks?
-- How do different fairness metrics (e.g., demographic parity, equal opportunity) reflect imbalances?
-- How do different fairness-aware tools (e.g., AIF360, Fairlearn) perform in mitigating gender bias in music recommendation systems?
-- Can algorithmic fairness techniques improve the exposure of underrepresented gender groups without sacrificing recommendation quality?
+- How do different fairness metrics e.g. demographic parity, equal opportunity reflect imbalances?​
+- How do different fairness-aware tools perform in mitigating gender bias in music recommendation systems
 
 
 ### 🎯 Project Goals
