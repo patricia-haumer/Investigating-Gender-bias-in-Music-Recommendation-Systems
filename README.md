@@ -39,5 +39,5 @@ Some data files (due to size or licensing) may be partially included or require 
 - Jupyter Notebooks
 
 ## 👩‍💻 Contributors
-- Katharina Rosa Pöcher (h11917060)
 - Patricia Haumer (h11910653)
+- Katharina Rosa Pöcher (h11917060)
