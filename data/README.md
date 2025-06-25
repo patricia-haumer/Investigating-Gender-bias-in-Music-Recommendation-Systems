@@ -1,6 +1,6 @@
 # 📁 Data
 
-This folder contains the datasets used in the project **Unheard Voices: Investigating Gender Bias in Music Recommendation Systems**. The data is derived from both **Spotify** and **Last.fm** platforms and includes gender-enriched metadata for fairness analysis.
+This folder contains the datafiles used in the project **Unheard Voices: Investigating Gender Bias in Music Recommendation Systems**. The data is derived from both **Spotify** and **Last.fm** platforms and includes gender-enriched metadata for fairness analysis.
 
 ---
 
