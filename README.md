@@ -22,7 +22,7 @@ This project investigates the presence and mitigation of **gender bias** in musi
 - `data/`: contains the datasets used or links to download them
 - `notebooks/`: contains data processing, descriptive statistics, modeling, and fairness evaluation notebooks
 - `requirements`: packages needed to run the notebooks
-- `LICENSE`: open-source license for usage and citation
+- `License`: open-source license for usage and citation
 - `README.md`: this file
 
 ## 📊 Datasets
