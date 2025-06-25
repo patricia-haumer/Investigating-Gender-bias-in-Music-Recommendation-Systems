@@ -38,7 +38,7 @@ This folder contains the datasets used in the project **Unheard Voices: Investig
   [https://doi.org/10.1145/3269206.3269288](https://doi.org/10.1145/3269206.3269288)
 
 - **Last.fm**  
-  Publicly available data (via precompiled sources or Last.fm APIs)
+  [https://www.kaggle.com/datasets/harshal19t/lastfm-dataset](https://www.kaggle.com/datasets/harshal19t/lastfm-dataset)
 
 - **MusicBrainz API**  
   Used to enrich artist metadata with gender attributes: [https://musicbrainz.org/](https://musicbrainz.org/)
