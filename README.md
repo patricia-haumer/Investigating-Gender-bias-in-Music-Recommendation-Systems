@@ -23,7 +23,7 @@ This project investigates the presence and mitigation of **gender bias** in musi
 - `README.md`: this file
 
 ## 📊 Datasets
-- **Spotify**: [Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)
+- **Spotify**: A dataset of 1 million user-generated playlists (2010–2017) used to analyze track popularity and gender representation in music recommendations [Million Playlist Dataset](https://www.aicrowd.com/challenges/spotify-million-playlist-dataset-challenge)
 - **Last.fm**: Collected via publicly available sources from [Kaggle](https://www.kaggle.com/datasets/harshal19t/lastfm-dataset)
 - The datasets were enriched using the [MusicBrainz API](https://musicbrainz.org/), by retrieving the gender attributes
 
