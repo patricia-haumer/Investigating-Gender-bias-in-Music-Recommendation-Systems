@@ -15,7 +15,7 @@ This directory contains all Jupyter notebooks used in the project, structured by
 
 | Filename                                       | Description                                                              |
 |-----------------------------------------------|--------------------------------------------------------------------------|
-| `01_LastFm_DataRetrieval_Preprocessing.ipynb` | Data loading, cleaning, gender enrichment                                |
+| `01_LastFm_DataRetrieval_Preprocessing.ipynb` | Data loading, cleaning, gender enrichment, and Descriptive Statistics Summary|
 | _..._                                         | *(future notebooks for recommender, AIF360, Fairlearn planned)*          |
 
 ## 🛠️ Notes
