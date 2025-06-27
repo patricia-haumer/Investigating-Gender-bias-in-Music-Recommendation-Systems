@@ -108,6 +108,50 @@ This document outlines key talking points and content for your 10-minute present
 
 ---
 
+## 🧾 ** Summary of most important Project Findings **
+
+### 1. 🎯 **Gender Bias Is Real and Measurable**
+
+* Both **Spotify** and **Last.fm** recommendation systems displayed a **clear gender bias**, favoring **male artists**.
+* **Female and non-binary artists** were significantly underrepresented, especially in **baseline (popularity-based)** models.
+
+> Example: Female artist exposure often fell below **40%** in top-ranked recommendations.
+
+---
+
+### 2. 📊 **Fairness Metrics Quantify Bias Clearly**
+
+* **Exposure Ratio** and **Disparate Impact** were the most informative for your domain.
+* **Demographic Parity** and **Equal Opportunity** violations helped pinpoint where and how the system failed to treat gender groups equally.
+
+> In several cases, **disparate impact was below 0.8**, indicating a legally and ethically significant imbalance.
+
+---
+
+### 3. 🤖 **Fairness Tools Can Mitigate Bias**
+
+| Tool           | Result                                                                                                       |
+| -------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Fairlearn**  | Improved fairness with **re-ranking**, especially in content-based models. Some trade-off in accuracy.       |
+| **AIF360**     | Achieved **strong fairness gains** in both baseline and content-based models with **minimal accuracy loss**. |
+| **Best Setup** | **Content-Based Filtering + AIF360** gave the **most balanced** outcome between fairness and performance.    |
+
+---
+
+### 4. 📁 **Cross-Dataset Findings Are Consistent**
+
+* **Bias was present in both datasets**, though Spotify’s baseline bias was slightly more pronounced.
+* **Fairness tools generalized well** across datasets, with AIF360 consistently outperforming in mitigation strength.
+
+---
+
+### 5. ✅ **Fairness ≠ Accuracy Trade-Off Is Manageable**
+
+* Applying fairness-aware techniques **did not drastically reduce recommender performance**.
+* You demonstrated that **ethical AI can also be effective AI**—achieving equity without sacrificing quality.
+
+---
+
 ## 🧠 Conclusion
 
 - **Bias is clearly present** in both datasets and recommender types.
