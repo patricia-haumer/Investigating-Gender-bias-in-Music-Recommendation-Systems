@@ -53,6 +53,14 @@ This document outlines key talking points and content for your 10-minute present
   - Accuracy: Precision, Recall
   - Fairness: Exposure Ratio, Disparate Impact, Demographic Parity
 
+| Metric                 | Meaning                                                             |
+| ---------------------- | ------------------------------------------------------------------- |
+| **Exposure Ratio**     | Compares how often items from each gender appear in recommendations |
+| **Disparate Impact**   | Ratio of positive outcomes across groups (ideal: close to 1)        |
+| **Demographic Parity** | Checks if gender affects chance of being recommended                |
+| **Equal Opportunity**  | Evaluates fairness conditional on artist quality or relevance       |
+
+
 ---
 
 ## 📊 Key Findings
@@ -64,16 +72,90 @@ This document outlines key talking points and content for your 10-minute present
 | Last.fm | Baseline         | Fairlearn  | ✅ Yes      | ✅ Partially     |
 | Last.fm | Content-Based    | AIF360     | ✅ Yes      | ✅ Significantly |
 
-- **Fairness vs. Accuracy**: Minimal drop in performance when fairness tools were applied.
-- **Most Effective**: AIF360 showed **strong fairness improvements** with **minimal accuracy trade-off**.
+# 📊 Project Summary & Results Comparison
+
+## 🎧 Spotify Dataset
+
+| Notebook                                                   | Recommender Type | Tool Used | Bias Found | Bias Mitigated | Notes |
+|------------------------------------------------------------|------------------|-----------|------------|----------------|-------|
+| `03_Spotify_Baselinerecommender_Fairlearn.ipynb`           | Popularity-based | Fairlearn | ✅ Yes     | ⚠️ Partially    | Exposure gap present between male/female artists |
+| `04_Spotify_ContentBased Filtering_recommender_Fairlearn.ipynb` | Content-based    | Fairlearn | ✅ Yes     | ✅ Significantly | Improved exposure ratio |
+| `05.1_Spotify_recommender_AIF.ipynb`                       | Popularity-based | AIF360    | ✅ Yes     | ✅ Yes         | Better fairness metrics vs. Fairlearn |
+| `05.2_Spotify_ContentBased Filtering_recommender_AIF360.ipynb` | Content-based    | AIF360    | ✅ Yes     | ✅ Strongly     | Most balanced fairness/accuracy trade-off |
+
+## 🎵 Last.fm Dataset
+
+| Notebook                                            | Recommender Type | Tool Used | Bias Found | Bias Mitigated | Notes |
+|-----------------------------------------------------|------------------|-----------|------------|----------------|-------|
+| `02_Last.fm_Baselinerecommender_Fairlearn.ipynb`    | Popularity-based | Fairlearn | ✅ Yes     | ⚠️ Partially    | Gender bias visible, not fully corrected |
+| `03_Last.fm_ContentBasedFiltering_Fairlearn.ipynb`  | Content-based    | Fairlearn | ✅ Yes     | ✅ Yes         | Notable fairness gain via re-ranking |
+| `04_Last.fm_AIF360.ipynb`                           | Content-based    | AIF360    | ✅ Yes     | ✅ Significantly | Most effective for Last.fm data |
 
 ---
 
 ## 🧠 Conclusion
 
-- Gender bias exists and persists in music recommendation systems.
-- Fairness-aware algorithms **can mitigate bias** without severely harming recommendation quality.
-- Project supports the development of **more equitable AI systems**, aligned with **societal and legal expectations**.
+- **Bias is clearly present** in both datasets and recommender types.
+- **AIF360 outperformed Fairlearn** in both popularity-based and content-based recommenders.
+- **Content-based filtering + AIF360** yielded the **best fairness-to-accuracy balance**.
+- **Spotify and Last.fm** both benefited from fairness-aware re-ranking, but improvements varied by dataset and tool.
+
+
+- **Fairness vs. Accuracy**: Minimal drop in performance when fairness tools were applied.
+- **Most Effective**: AIF360 showed **strong fairness improvements** with **minimal accuracy trade-off**.
+
+---
+
+## ✅ Research Question Summary & Findings
+
+### 🎯 **Main Research Question:**
+
+**Does gender bias exist in music recommender systems?**
+➡️ **Yes.**
+Both the Spotify and Last.fm datasets revealed a **systematic underrepresentation** of female and non-binary artists in recommendation results, particularly in baseline (popularity-based) models. Metrics like exposure ratio and disparate impact consistently showed that **male artists were disproportionately favored**.
+
+---
+
+### 🔍 **Sub-Research Question 1:**
+
+**How do different fairness metrics (e.g., demographic parity, equal opportunity) reflect imbalances?**
+
+➡️ **Each metric highlights different aspects of bias**:
+
+| Metric                 | What It Shows                                                                 | Example Finding                             |
+| ---------------------- | ----------------------------------------------------------------------------- | ------------------------------------------- |
+| **Exposure Ratio**     | Whether different genders are shown to users at comparable rates              | Female artists had <40% exposure on average |
+| **Demographic Parity** | Measures whether recommendations are independent of gender                    | Violated in most baseline systems           |
+| **Equal Opportunity**  | Evaluates if the recommender equally promotes qualified items from all groups | Male artists more likely to be top-ranked   |
+| **Disparate Impact**   | Ratio of favorable outcomes between groups                                    | Often <0.8 (threshold for fairness)         |
+
+These metrics provide **quantitative evidence** of structural imbalance, allowing for **targeted mitigation**.
+
+---
+
+### 🤖 **Sub-Research Question 2:**
+
+**How do different fairness-aware tools perform in mitigating gender bias in music recommendation systems?**
+
+➡️ **Performance Comparison**:
+
+| Tool                  | Recommender Type           | Performance Summary                                                                       |
+| --------------------- | -------------------------- | ----------------------------------------------------------------------------------------- |
+| **Fairlearn**         | Post-processing re-ranking | Improved exposure for underrepresented artists, but often with minor accuracy loss        |
+| **AIF360**            | Bias mitigation toolkit    | Provided **stronger fairness improvements** across most configurations                    |
+| **Combined Strategy** | Fairlearn + AIF360         | In some notebooks, using both methods in succession yielded the **most balanced results** |
+
+* **Fairlearn** was more transparent and modular (e.g., useful for re-ranking).
+* **AIF360** included broader fairness checks (e.g., equal opportunity, statistical parity), and produced **the most significant bias reduction** with minimal accuracy loss in content-based recommenders.
+
+---
+
+## 🧠 Final Insight
+
+✅ Gender bias is **measurable and real** in music recommendation systems.
+⚙️ **Fairness-aware tools work**, and **choice of metric/tool matters** depending on the fairness objective.
+📈 The **most effective approach** combined content-based filtering with **AIF360**, achieving fairness **without sacrificing recommendation quality**.
+
 
 ---
 
