@@ -200,9 +200,9 @@ These metrics provide **quantitative evidence** of structural imbalance, allowin
 
 ## 🧠 Final Insight
 
-✅ Gender bias is **measurable and real** in music recommendation systems.
-⚙️ **Fairness-aware tools work**, and **choice of metric/tool matters** depending on the fairness objective.
-📈 The **most effective approach** combined content-based filtering with **AIF360**, achieving fairness **without sacrificing recommendation quality**.
+- Gender bias is **measurable and real** in music recommendation systems.
+- **Fairness-aware tools work**, and **choice of metric/tool matters** depending on the fairness objective.
+- The **most effective approach** combined content-based filtering with **AIF360**, achieving fairness **without sacrificing recommendation quality**.
 
 
 ---
