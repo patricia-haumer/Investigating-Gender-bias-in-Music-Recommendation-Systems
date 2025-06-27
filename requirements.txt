@@ -1,25 +1,26 @@
-# Core libraries
-numpy
-pandas
-scikit-learn
+# Core Libraries
+numpy>=1.23
+pandas>=1.5
+scikit-learn>=1.2
 
-# Fairness tools
-fairlearn
-aif360
+# ⚖Fairness Tools
+fairlearn>=0.8
+aif360>=0.5.0
 
 # Visualization
-matplotlib
-seaborn
+matplotlib>=3.6
+seaborn>=0.12
 
-# Jupyter environment
-notebook
-ipykernel
+# Jupyter Environment
+notebook>=6.5
+ipykernel>=6.20
 
-# Optional: for JSON/gender enrichment and API work
-requests
+# External Data/API Access
+requests>=2.28
 
-# Optional: if you're using RecBole or other models
-# recbole
+# Optional: Advanced Recommendation Libraries
+# recbole>=1.1.1
 
-# Versioning can be added if needed, e.g.:
-# fairlearn==0.7.0
+# Optional: Fix specific versions for reproducibility
+# fairlearn==0.8.0
+# aif360==0.5.0
