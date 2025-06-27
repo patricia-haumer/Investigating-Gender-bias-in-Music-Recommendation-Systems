@@ -18,6 +18,15 @@ This project investigates the presence and mitigation of **gender bias** in musi
 - How do different fairness metrics e.g. demographic parity, equal opportunity reflect imbalances?​
 - How do different fairness-aware tools perform in mitigating gender bias in music recommendation systems
 
+## 🧪 Methodology
+
+We followed the **Design Science Research** approach (Peffers et al., 2007):
+
+1. **Problem Identification** – Gender bias in music recommender systems.
+2. **Design & Development** – Baseline + Content-Based recommenders using Spotify & Last.fm.
+3. **Evaluation** – Fairness and accuracy metrics (exposure ratio, disparate impact, etc.).
+4. **Tools Used**: `Fairlearn`, `AIF360`, `FaiRecSys`, `RecBole`.
+
 ## 📁 Structure
 - `data/`: contains the datasets used or links to download them
 - `notebooks/`: contains data processing, descriptive statistics, modeling, and fairness evaluation notebooks
@@ -37,6 +46,12 @@ Some data files (due to size or licensing) may be partially included or require 
 - [Fairlearn](https://github.com/fairlearn/fairlearn) 
 - [AIF360](https://github.com/Trusted-AI/AIF360)
 - Jupyter Notebooks
+
+## 📈 Results Summary
+
+✅ Gender bias **detected** in both baseline and content-based recommenders.
+⚙️ Fairness-aware re-ranking methods **reduced bias** while preserving recommendation quality.
+🎯 AIF360 and Fairlearn metrics guided bias mitigation strategies effectively.
 
 ## 👩‍💻 Contributors
 - Patricia Haumer (h11910653)
