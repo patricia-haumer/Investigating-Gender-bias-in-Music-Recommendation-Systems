@@ -98,7 +98,7 @@
 
 ---
 
-## 🧾 ** Summary of most important Project Findings**
+## 🧾 **Summary of most important Project Findings**
 
 ### 1. 🎯 **Gender Bias Is Real and Measurable**
 
