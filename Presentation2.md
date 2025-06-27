@@ -91,6 +91,21 @@ This document outlines key talking points and content for your 10-minute present
 | `03_Last.fm_ContentBasedFiltering_Fairlearn.ipynb`  | Content-based    | Fairlearn | ✅ Yes     | ✅ Yes         | Notable fairness gain via re-ranking |
 | `04_Last.fm_AIF360.ipynb`                           | Content-based    | AIF360    | ✅ Yes     | ✅ Significantly | Most effective for Last.fm data |
 
+
+## Overiview of Files
+| Filename                                                                            | Dataset | Purpose / Focus                                                 | Recommender Type | Fairness Tool |
+| ----------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------- | ---------------- | ------------- |
+| `01_Spotify_GenderBiasinMusicRecommenderSystems_Data Retrieval_Preprocessing.ipynb` | Spotify | Data retrieval, preprocessing, gender enrichment via API        | –                | –             |
+| `02_Spotify_descriptive_data_incl_files.ipynb`                                      | Spotify | Exploratory Data Analysis (EDA) and descriptive statistics      | –                | –             |
+| `03_Spotify_Baselinerecommender_Fairlearn.ipynb`                                    | Spotify | Popularity-based recommender + fairness evaluation              | Baseline         | Fairlearn     |
+| `04_Spotify_ContentBased Filtering_recommender_Fairlearn.ipynb`                     | Spotify | Content-based filtering + post-processing fairness improvements | Content-Based    | Fairlearn     |
+| `05.1_Spotify_recommender_AIF.ipynb`                                                | Spotify | Popularity-based fairness analysis using AIF360                 | Baseline         | AIF360        |
+| `05.2_Spotify_ContentBased Filtering_recommender_AIF360.ipynb`                      | Spotify | Content-based filtering fairness mitigation via AIF360          | Content-Based    | AIF360        |
+| `01_LastFm_DataRetrieval_Preprocessing.ipynb`                                       | Last.fm | Data retrieval, cleaning, gender mapping                        | –                | –             |
+| `02_Last.fm_Baselinerecommender_Fairlearn.ipynb`                                    | Last.fm | Baseline recommender + fairness evaluation                      | Baseline         | Fairlearn     |
+| `03_Last.fm_ContentBasedFiltering_Fairlearn.ipynb`                                  | Last.fm | Content-based recommender + Fairlearn-based bias mitigation     | Content-Based    | Fairlearn     |
+| `04_Last.fm_AIF360.ipynb`                                                           | Last.fm | Content-based recommender with AIF360 fairness pipeline         |baseline & Content-Based    | AIF360        |
+
 ---
 
 ## 🧠 Conclusion
