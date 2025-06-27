@@ -90,7 +90,7 @@
 | `04_Last.fm_AIF360.ipynb`                           | Content-based    | AIF360    | ✅ Yes     | ✅ Significantly | Most effective for Last.fm data |
 
 
-## Overiview of Files
+## Overview of Files
 | Filename                                                                            | Dataset | Purpose / Focus                                                 | Recommender Type | Fairness Tool |
 | ----------------------------------------------------------------------------------- | ------- | --------------------------------------------------------------- | ---------------- | ------------- |
 | `01_Spotify_GenderBiasinMusicRecommenderSystems_Data Retrieval_Preprocessing.ipynb` | Spotify | Data retrieval, preprocessing, gender enrichment via API        | –                | –             |
@@ -119,7 +119,7 @@
 
 ### 2. 📊 **Fairness Metrics Quantify Bias Clearly**
 
-* **Exposure Ratio** and **Disparate Impact** were the most informative for your domain.
+* **Exposure Ratio** and **Disparate Impact** were the most informative for the domain.
 * **Demographic Parity** and **Equal Opportunity** violations helped pinpoint where and how the system failed to treat gender groups equally.
 
 > In several cases, **disparate impact was below 0.8**, indicating a legally and ethically significant imbalance.
@@ -146,7 +146,6 @@
 ### 5. ✅ **Fairness ≠ Accuracy Trade-Off Is Manageable**
 
 * Applying fairness-aware techniques **did not drastically reduce recommender performance**.
-* You demonstrated that **ethical AI can also be effective AI**—achieving equity without sacrificing quality.
 
 ---
 
@@ -200,7 +199,7 @@ These metrics provide **quantitative evidence** of structural imbalance, allowin
 | --------------------- | -------------------------- | ----------------------------------------------------------------------------------------- |
 | **Fairlearn**         | Post-processing re-ranking | Improved exposure for underrepresented artists, but often with minor accuracy loss        |
 | **AIF360**            | Bias mitigation toolkit    | Provided **stronger fairness improvements** across most configurations                    |
-| **Combined Strategy** | Fairlearn + AIF360         | In some notebooks, using both methods in succession yielded the **most balanced results** |
+| **Combined Strategy** | Fairlearn + AIF360         | When using both methods in succession this can yielded the **most balanced results** |
 
 * **Fairlearn** was more transparent and modular (e.g., useful for re-ranking).
 * **AIF360** included broader fairness checks (e.g., equal opportunity, statistical parity), and produced **the most significant bias reduction** with minimal accuracy loss in content-based recommenders.
