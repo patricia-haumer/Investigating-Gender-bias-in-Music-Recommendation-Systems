@@ -1,7 +1,5 @@
 # 🎤 Presentation Guide: Unheard Voices – Investigating Gender Bias in Music Recommendation Systems
 
-This document outlines key talking points and content for your 10-minute presentation.
-
 ---
 
 ## 🎯 Project Motivation
